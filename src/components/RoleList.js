@@ -21,7 +21,7 @@ class RoleList extends Component {
 
     updateRole(role) {
         this.setState({activeRole: role});
-        this.props.onUpdateRole(this.state.activeRole);
+        this.props.onUpdateRole(role);
     }
 
     activeClass(role) {
