@@ -20,6 +20,7 @@
  */
 .role {
   &__item {
+    $button: #{&}-button;
     display: inline-block;
     vertical-align: middle;
     &-button {
@@ -28,6 +29,14 @@
       font-size: 13px;
       border: 1px solid #000;
       background-color: #fff;
+      outline: none;
+    }
+    &--active {
+      #{$button} {
+        color: #fff;
+        background-color: #000;
+        border-color: #fff;
+      }
     }
     & + & {
       margin-left: 10px;
